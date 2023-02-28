@@ -1,5 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types';
+// import { Link } from 'react-router-dom';
+
 export default function Navbar(props) {
   return (
     <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
@@ -14,7 +16,7 @@ export default function Navbar(props) {
           <a className="nav-link active" aria-current="page" href="/">Home</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/">{props.at}</a>
+          <a className="nav-link" href="/about">{props.at}</a>
         </li>
         
       </ul>
